@@ -1,0 +1,86 @@
+[
+  {
+    "file": "map_uk.csv",
+    "line": 12,
+    "item_id": "MAP-UK-2310",
+    "amount_affected": 180000.0,
+    "action_taken": "assumed",
+    "description": "Deferred income (local 2310) incorrectly mapped to Revenue (4100). Remapped to Deferred income liability (2300)."
+  },
+  {
+    "file": "subledger_controls.csv",
+    "line": 4,
+    "item_id": "UK-1100",
+    "amount_affected": 45000.0,
+    "action_taken": "flagged",
+    "description": "UK Accounts receivable (trade) mismatch: GL=1985000.00, Control=1940000.00, Variance=45000.00"
+  },
+  {
+    "file": "subledger_controls.csv",
+    "line": 5,
+    "item_id": "UK-2100",
+    "amount_affected": 45000.0,
+    "action_taken": "flagged",
+    "description": "UK Accounts payable (trade) mismatch: GL=1210000.00, Control=1165000.00, Variance=45000.00"
+  },
+  {
+    "file": "adjustments.json",
+    "line": 102,
+    "item_id": "JE-006",
+    "amount_affected": 51200.0,
+    "action_taken": "blocked",
+    "description": "JE-006 rejected: Prompt injection attack detected in memo; Unbalanced journal entry (Dr=51200.00, Cr=50000.00, Diff=1200.00)"
+  },
+  {
+    "file": "adjustments.json",
+    "line": 294,
+    "item_id": "JE-016",
+    "amount_affected": 540000.0,
+    "action_taken": "flagged",
+    "description": "JE-016 held for review: Contains unmapped/unknown accounts: ['IN-GST-ITC']"
+  },
+  {
+    "file": "adjustments.json",
+    "line": 313,
+    "item_id": "JE-017",
+    "amount_affected": 22000.0,
+    "action_taken": "blocked",
+    "description": "JE-017 rejected: Out-of-period transaction date '2025-01-06' (not FY2024)"
+  },
+  {
+    "file": "adjustments.json",
+    "line": 351,
+    "item_id": "JE-019",
+    "amount_affected": 48000.0,
+    "action_taken": "flagged",
+    "description": "JE-019 held for review: Suspected duplicate of previously submitted journal JE-014 (Accrue FY2024 audit fee (external auditors))"
+  },
+  {
+    "file": "intercompany.csv",
+    "line": 6,
+    "item_id": "INV-US-2291",
+    "amount_affected": 10160.0,
+    "action_taken": "assumed",
+    "description": "In-transit invoice INV-US-2291 ($10,160.00 USD) not recorded by UK. Accrued at closing rate (\u00a38,108.54 GBP)."
+  },
+  {
+    "file": "tb_uk.csv",
+    "line": 10,
+    "item_id": "UK-2150-REVAL",
+    "amount_affected": 11957.88,
+    "action_taken": "assumed",
+    "description": "UK intercompany liability ($629,840.00 USD) retranslated at closing rate 1.2530. Exchange loss of \u00a311,957.88 GBP recognized in 7300."
+  },
+  {
+    "file": "fx_rates.csv",
+    "line": 14,
+    "item_id": "FX-GBP-SGD",
+    "amount_affected": 40000.0,
+    "action_taken": "flagged",
+    "description": "Missing GBP/SGD closing exchange rate at 2024-12-31 in fx_rates.csv. Account 1210 (Bank - DBS SGD) cannot be retranslated at year-end without assuming a rate. Flagged with null for sgd_bank_gbp per strict anti-assumption policy.",
+    "source_file": "fx_rates.csv",
+    "problem": "Missing GBP/SGD closing exchange rate at 2024-12-31",
+    "explanation": "Account 1210 (Bank - DBS SGD) cannot be retranslated at year-end without assuming a rate. Per instruction, no values are assumed; returning null for sgd_bank_gbp.",
+    "severity": "Warning"
+  }
+]

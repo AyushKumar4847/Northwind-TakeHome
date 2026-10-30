@@ -1,0 +1,28 @@
+{
+  "group_revenue": 28301607.81,
+  "group_profit": 2832780.95,
+  "profit_owners": 2771922.89,
+  "profit_nci": 60858.06,
+  "nci_closing": 1325107.53,
+  "goodwill_closing": 1375815.07,
+  "translation_reserve_movement": 43706.72,
+  "total_assets": 28575272.94,
+  "total_equity": 18407835.07,
+  "intercompany_difference": {
+    "total_difference_unadjusted_gbp": 20066.42,
+    "causes": {
+      "in_transit_invoice_INV-US-2291_usd": 10160.0,
+      "in_transit_invoice_INV-US-2291_gbp": 8108.54,
+      "unrealized_fx_revaluation_of_uk_liability_gbp": 11957.88
+    },
+    "status": "fully_reconciled"
+  },
+  "sgd_bank_gbp": null,
+  "sgd_bank_gbp_note": "Null: missing GBP/SGD closing exchange rate at 2024-12-31 in fx_rates.csv. Rate cannot be determined without estimation.",
+  "journals": {
+    "posted": 16,
+    "rejected": 2,
+    "held_for_review": 2,
+    "total": 20
+  }
+}

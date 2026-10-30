@@ -1,0 +1,25 @@
+{
+  "period": "FY2024",
+  "currency": "GBP",
+  "opening_balance": {
+    "share_capital": 1250000.0,
+    "retained_earnings": 12604747.93,
+    "translation_reserve": 412350.0,
+    "non_controlling_interest": 0.0,
+    "total_equity": 14267097.93
+  },
+  "movements": {
+    "profit_for_the_year_owners": 2771922.89,
+    "profit_for_the_year_nci": 60858.06,
+    "translation_reserve_movement": 43706.72,
+    "nci_recognized_at_acquisition": 1263960.19,
+    "nci_foreign_exchange_translation": 289.28
+  },
+  "closing_balance": {
+    "share_capital": 1250000.0,
+    "retained_earnings": 15376670.82,
+    "translation_reserve": 456056.72,
+    "non_controlling_interest": 1325107.53,
+    "total_equity": 18407835.07
+  }
+}

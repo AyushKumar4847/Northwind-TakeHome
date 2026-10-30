@@ -1,0 +1,20 @@
+{
+  "period": "FY2024",
+  "currency": "GBP",
+  "revenue": 28301607.81,
+  "cost_of_sales": 15216592.61,
+  "gross_profit": 13085015.2,
+  "operating_expenses": 8889924.39,
+  "operating_expenses_breakdown": {
+    "staff_costs": 5377709.98,
+    "rent_and_occupancy": 789466.86,
+    "depreciation": 1010034.3,
+    "other_operating_expenses": 1712713.25
+  },
+  "finance_costs": 300580.07,
+  "foreign_exchange_gain_loss": 9991.67,
+  "tax_expense": 1051738.12,
+  "group_profit": 2832780.95,
+  "attributable_to_owners": 2771922.89,
+  "attributable_to_nci": 60858.06
+}

@@ -1,0 +1,4 @@
+# Northwind Group Consolidation Engine
+# Standard library only (no external dependencies required)
+# Python >= 3.8
+

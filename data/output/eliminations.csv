@@ -1,0 +1,15 @@
+entry_id,entity,reference,group_account,account_name,description,debit_gbp,credit_gbp,source_rows
+ELIM-IC-BS,US/UK,IC-REC-PAY,2150,Intercompany payables,Eliminate intercompany receivables and payables,510774.14,0.00,"tb_us.csv:L4, tb_uk.csv:L10, intercompany.csv:L6"
+ELIM-IC-BS,US/UK,IC-REC-PAY,1250,Intercompany receivables,Eliminate intercompany receivables and payables,0.00,510774.14,"tb_us.csv:L4, tb_uk.csv:L10, intercompany.csv:L6"
+ELIM-IC-PL,US/UK,IC-MGMT-FEE,4200,Intercompany management fee income,Eliminate intercompany management fee income,500782.47,0.00,tb_us.csv:L19
+ELIM-IC-PL,US/UK,IC-MGMT-FEE,6300,Intercompany management fees,Eliminate intercompany management fee expense,0.00,498816.26,"tb_uk.csv:L22, intercompany.csv:L6"
+ELIM-IC-PL,US/UK,IC-MGMT-FX,7300,Foreign exchange gains and losses,Residual exchange difference on eliminating intercompany fees to 7300,0.00,1966.21,group_policies.md:Policy 5
+ELIM-INV-UK,US/UK,INV-SUB-UK,3100,Share capital,Eliminate UK subsidiary share capital against parent investment,1000000.00,0.00,tb_uk.csv:L14
+ELIM-INV-UK,US/UK,INV-SUB-UK,3200,Retained earnings,UK historical investment translation/reserve variance,13567.44,0.00,"tb_us.csv:L9, tb_uk.csv:L14"
+ELIM-INV-UK,US/UK,INV-SUB-UK,1600,Investments in subsidiaries,Eliminate parent investment in Northwind UK Ltd,0.00,1013567.44,tb_us.csv:L9
+ELIM-INV-IN,US/IN,INV-SUB-IN,1700,Goodwill,Recognize Goodwill on acquisition of Northwind India,1375815.07,0.00,acquisition_note.md:L5-L14
+ELIM-INV-IN,US/IN,INV-SUB-IN,3100,Share capital,Eliminate India Share Capital at 31 Dec rate,2330310.08,0.00,tb_in.csv:L12
+ELIM-INV-IN,US/IN,INV-SUB-IN,3200,Retained earnings,Eliminate India pre-acquisition reserves at 31 Dec rate,3989490.86,0.00,"tb_in.csv:L13, in_pl_monthly.csv:Q1"
+ELIM-INV-IN,US/IN,INV-SUB-IN,3300,Translation reserve,Translation reserve adjustment on parent investment in foreign subsidiary,171994.16,0.00,group_policies.md:Policy 2
+ELIM-INV-IN,US/IN,INV-SUB-IN,3400,Non-controlling interest,Recognize initial Non-Controlling Interest at acquisition,0.00,1263960.19,acquisition_note.md:L4
+ELIM-INV-IN,US/IN,INV-SUB-IN,1610,Investments in subsidiaries - India,Eliminate parent investment in Northwind India Pvt Ltd,0.00,6603649.98,tb_us.csv:L10

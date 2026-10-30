@@ -1,0 +1,29 @@
+{
+  "as_of": "2024-12-31",
+  "currency": "GBP",
+  "assets": {
+    "cash_and_cash_equivalents": 7810225.9,
+    "trade_receivables": 6665436.66,
+    "inventory": 3218502.18,
+    "prepayments": 497942.01,
+    "property_plant_and_equipment_net": 9007351.12,
+    "goodwill": 1375815.07,
+    "total_assets": 28575272.94
+  },
+  "liabilities": {
+    "trade_payables": 4104779.23,
+    "accruals": 897534.4,
+    "deferred_income": 483272.15,
+    "income_tax_payable": 770007.16,
+    "borrowings": 3911844.93,
+    "total_liabilities": 10167437.87
+  },
+  "equity": {
+    "share_capital": 1250000.0,
+    "retained_earnings": 15376670.82,
+    "translation_reserve": 456056.72,
+    "non_controlling_interest": 1325107.53,
+    "total_equity": 18407835.07
+  },
+  "balanced": true
+}
